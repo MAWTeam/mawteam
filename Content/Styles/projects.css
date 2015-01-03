@@ -1,0 +1,114 @@
+﻿/* The "stuck out J" effect */
+#projects-text {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+    #projects-text h1 {
+        font-size: 35px;
+        font-weight: 300;
+        display: inline;
+    }
+    #projects-text #underline-1,
+    #projects-text #underline-2 {
+        background-color: #fff;
+        height: 1px;
+        margin-top: -3px;
+        position: absolute;
+        bottom: 10px;
+    }
+        #projects-text #underline-1 {
+            left: 2px;
+            width: 45px;
+        }
+        #projects-text #underline-2 {
+            right: 0;
+            width: 60px;
+        }
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#projects {
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+}
+    #projects section {
+        float: left;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        cursor: pointer;
+    }
+        #projects section img {
+            width: 25%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #projects section .info {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            background-color: transparent;
+            display: block;
+            opacity: 0;
+
+            transition: all 0.15s linear;
+
+            cursor: initial;
+
+                opacity: 1;
+                background-color: rgba(0, 0, 0, 0.7);
+        }
+            #projects section:hover .info {
+                opacity: 1;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            #projects section .info h1 {
+                text-align: left;
+                width: 80%;
+                margin: 0 auto;
+                border-bottom: 1px solid #fff;
+                margin-top: 10px;
+                font-size: 27px;
+                font-weight: 300;
+                padding-left: 30px;
+                padding-bottom: 5px;
+            }
+            #projects section .info p {
+                width: 80%;
+                margin: 25px auto;
+                text-align: left;
+                font-size: 15px;
+            }
+            #projects section .info .links {
+                position: absolute;
+                left: 20px;
+                bottom: 20px;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+                #projects section .info .links li {
+                    float: left;
+                }
+            #projects section .info .button {
+                padding: 10px;
+                width: 80px;
+            }
+
+        #projects section#cyclefitness { background-color: #2f7ad3; }
+        #projects section#action { background-color: #8471b1; }
+        #projects section#classfinder { background-color: #1ccfaf; }
+        #projects section#halcyonechoes { background-color: #fd5236; }

@@ -15,7 +15,7 @@ html, body {
 button {
     padding: 15px;
     border: 1px solid #fff;
-    background-color: #1f1f1f;
+    background-color: transparent;
     text-decoration: none;
     display: block;
     width: auto;
