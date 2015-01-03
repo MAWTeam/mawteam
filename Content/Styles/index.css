@@ -1,0 +1,28 @@
+﻿html, body {
+    overflow: hidden;
+}
+
+/* We're using the body as basically a div#container to center all the things. */
+body {
+    height: auto;
+    width: 750px;
+    /* This is the "official" way to center things http://www.w3.org/Style/Examples/007/center.en.html#vertical */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+    height: 150px;
+}
+
+h2 {
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    margin: 50px 10px;
+}

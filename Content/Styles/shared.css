@@ -1,0 +1,30 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.button,
+button {
+    padding: 15px;
+    border: 1px solid #fff;
+    background-color: #1f1f1f;
+    text-decoration: none;
+    display: block;
+    width: auto;
+    color: #fff;
+
+    transition: all 0.1s linear;
+}
+.button:hover,
+button:hover {
+    background-color: #fff;
+    color: #1f1f1f;
+}
