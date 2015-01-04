@@ -1,0 +1,71 @@
+﻿#hamburger {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+nav {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    background-color: #fff;
+    text-align: left;
+}
+    nav a {
+        text-decoration: none;
+        border: 0;
+        color: currentColor;
+    }
+    nav #nav-logo {
+        width: 50%;
+        margin: 30px;
+    }
+    nav ul {
+        list-style-type: none;
+        color: #1f1f1f;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+        nav ul li {
+            padding-left: 30px;
+            font-size: 20px;
+            border-left: 5px solid #000;
+            cursor: pointer;
+            height: 70px;
+            line-height: 70px;
+        }
+            nav ul li:hover {
+                border-left-width: 10px;
+                padding-left: 25px; /* Decrease the padding by 5 to keep the text in the same place. */
+            }
+            nav ul li a {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        
+    nav ul#people li#matthew { border-left-color: #4a9ff4; }
+    nav ul#people li#adhiv { border-left-color: #e86565; }
+    nav ul#people li#will { border-left-color: #4fec74; }
+
+#hamburger, nav, main {
+    margin-left: 0;
+    transition: all .2s linear;
+}
+
+body.nav-opened #hamburger {
+    margin-left: 300px;
+}
+
+body.nav-opened nav {
+    left: 0;
+}
+
+body.nav-opened main {
+    margin-left: 300px;
+}
