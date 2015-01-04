@@ -6,10 +6,12 @@
 body {
     height: auto;
     width: 750px;
+
     /* This is the "official" way to center things http://www.w3.org/Style/Examples/007/center.en.html#vertical */
     position: absolute;
     left: 50%;
     top: 50%;
+
     transform: translate(-50%, -50%);
 }
 
@@ -18,11 +20,29 @@ body {
 }
 
 h2 {
-    font-weight: 300;
     margin-top: 50px;
+
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .button {
     display: inline-block;
     margin: 50px 10px;
+}
+
+@media all and (max-width:750px) {
+    body {
+        width: 100%;
+        position: relative;
+    }
+
+    #logo {
+        width: 80%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
