@@ -1,4 +1,4 @@
 mawteam
 =======
 
-The website for mawteam.github.io
+The website for mawteam.com
