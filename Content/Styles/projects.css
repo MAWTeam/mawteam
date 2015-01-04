@@ -65,10 +65,7 @@ h2 {
 
             transition: all 0.15s linear;
 
-            cursor: initial;
-
-                opacity: 1;
-                background-color: rgba(0, 0, 0, 0.7);
+            cursor: auto;
         }
             #projects section:hover .info {
                 opacity: 1;
@@ -99,10 +96,24 @@ h2 {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+                height: 45px;
             }
                 #projects section .info .links li {
                     float: left;
                 }
+                    .links .link {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        background-size: cover;
+                        margin-left: 20px;
+                        margin-top: 10px;
+                    }
+                        .links .github.link { background-image: url('../Images/Links/github.png'); }
+                            .links .github.link:hover { background-image: url('../Images/Links/github.dark.png'); }
+                        .links .web.link { background-image: url('../Images/Links/web.png'); }
+                            .links .web.link:hover { background-image: url('../Images/Links/web.dark.png'); }
+
             #projects section .info .button {
                 padding: 10px;
                 width: 80px;
