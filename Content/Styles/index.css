@@ -3,7 +3,7 @@
 }
 
 /* We're using the body as basically a div#container to center all the things. */
-body {
+main {
     height: auto;
     width: 750px;
 
