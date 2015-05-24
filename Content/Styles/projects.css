@@ -139,3 +139,8 @@ h2 {
         #projects section#action { background-color: #8471b1; }
         #projects section#classfinder { background-color: #1ccfaf; }
         #projects section#halcyonechoes { background-color: #fd5236; }
+        
+#more-info-wedge {
+    display: none;
+    width: 60vw;
+}
