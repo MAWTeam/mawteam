@@ -140,6 +140,7 @@
         margin-top: 0;
         font-weight: 400;
         font-size: 28px;
+        text-transform: capitalize;
     }
     #more-info-wedge p {
         font-size: 16px;
