@@ -50,8 +50,6 @@
         width: calc(100% / 3);
 
         float: left;
-
-        cursor: pointer;
     }
         #projects section img {
             position: absolute;
@@ -88,10 +86,10 @@
 
 #projects section p {
     position: absolute;
-    top: 50%;
+    top: 43%;
     margin: 0;
-    width: 85%;
-    left: 7.5%;
+    width: 90%;
+    left: 5%;
 }
 
 #projects section:hover p {
