@@ -86,7 +86,7 @@
 
 #projects section p {
     position: absolute;
-    top: 43%;
+    top: 50%;
     margin: 0;
     width: 90%;
     left: 5%;
@@ -94,6 +94,9 @@
 
 #projects section:hover p {
     opacity: 1;
+}
+#projects section:hover p.long {
+    display: none !important;
 }
 
 #projects section img {
