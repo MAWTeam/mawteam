@@ -32,15 +32,11 @@ h3 {
 
     font-size: 23px;
     font-weight: 300;
-    position: relative;
-    right: -10px;
 }
 
 ul {
     padding: 0;
     margin-top: 10px;
-    position: relative;
-    right: -10px;
 }
     ul li {
         list-style-type: none;
@@ -60,7 +56,8 @@ ul {
         
 #people-list {
     margin-top: 10px;
-    left: -10px;
+    position: relative;
+    left: -20px; /* For centering */
 }
     #people-list li {
         display: inline-block;
@@ -89,9 +86,6 @@ ul {
 }
 
 @media all and (max-width: 385px) {
-    h3, ul {
-        right: 0;
-    }
     #people-list {
         left: 0;
     }
