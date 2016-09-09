@@ -4,7 +4,11 @@
     display: inline-block;
     width: auto;
     
-    margin-top: 50px;
+    height: 90px;
+    line-height: 90px;
+    position: absolute;
+    top: 0;
+    left: 100px;
 }
     #projects-text h1 {
         /* Display:inlining here so it doesn't default to 100% width and instead keeps the div#projects-text to the size of the text only. */
@@ -12,6 +16,7 @@
 
         font-size: 35px;
         font-weight: 300;
+        position: relative;
     }
     #projects-text #underline-1,
     #projects-text #underline-2 {
@@ -27,115 +32,142 @@
             width: 45px;
         }
         #projects-text #underline-2 {
-            right: 2px;
+            right: 9px;
             width: 59px;
         }
 
-h2 {
-    font-size: 20px;
-    font-weight: 300;
-}
-
 #projects {
-    height: 600px;
-    width: 600px;
-
-    margin: 50px auto;
+    height: calc(100vh - 90px);
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    margin: 0;
 }
     #projects section {
         position: relative;
-        height: 300px;
-        width: 300px;
+        height: 50%;
+        width: calc(100% / 3);
 
         float: left;
-
-        cursor: pointer;
     }
         #projects section img {
             position: absolute;
 
-            width: 25%;
+            width: 20%;
 
             top: 50%;
             left: 50%;
 
             transform: translate(-50%, -50%);
         }
-        #projects section .info {
-            height: 100%;
-            width: 100%;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            background-color: transparent;
-            
-            opacity: 0;
-
-            cursor: auto;
-
-            transition: all 0.15s linear;
-        }
-            #projects section:hover .info {
-                opacity: 1;
-                background-color: rgba(0, 0, 0, 0.7);
-            }
-
-            #projects section .info h1 {
-                width: 80%;
-                margin: 10px auto 0;
-                padding: 0 0 5px 30px;
-                
-                text-align: left;
-
-                font-size: 27px;
-                font-weight: 300;
-
-                border-bottom: 1px solid #fff;
-            }
-            #projects section .info p {
-                width: 80%;
-                margin: 25px auto;
-
-                text-align: left;
-
-                font-size: 15px;
-            }
-            #projects section .info .links {
-                position: absolute;
-                bottom: 20px;
-                left: 20px;
-                
-                height: 45px;
-                margin: 0;
-                padding: 0;
-
-                list-style-type: none;
-            }
-                #projects section .info .links li {
-                    float: left;
-                }
-                    .links .link {
-                        display: inline-block;
-                        height: 25px;
-                        width: 25px;
-
-                        margin: 10px 0 0 20px;
-
-                        background-size: cover;
-                    }
-                        .links .github.link { background-image: url('../Images/Links/github.png'); }
-                            .links .github.link:hover { background-image: url('../Images/Links/github.dark.png'); }
-                        .links .web.link { background-image: url('../Images/Links/web.png'); }
-                            .links .web.link:hover { background-image: url('../Images/Links/web.dark.png'); }
-
-            #projects section .info .button {
-                width: 80px;
-                padding: 10px;
+            #projects #lhs-campaign > img {
+                width: 50%;
             }
 
         #projects section#cyclefitness { background-color: #2f7ad3; }
         #projects section#action { background-color: #8471b1; }
-        #projects section#classfinder { background-color: #1ccfaf; }
         #projects section#halcyonechoes { background-color: #fd5236; }
+        #projects section#classfinder { background-color: #1ccfaf; }
+        #projects section#lhs-campaign { background-color: #1394ee; }
+        #projects section#codetree { background-color: #1c1c1c; }
+        
+#more-info-wedge {
+    display: none;
+    width: 60vw;
+}
+
+#projects section h1,
+#projects section p,
+#projects section ul {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+#projects section p {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    width: 90%;
+    left: 5%;
+}
+
+#projects section:hover p {
+    opacity: 1;
+}
+#projects section:hover p.long {
+    display: none !important;
+}
+
+#projects section img {
+    margin-top: 0;
+    transition: margin-top 0.3s, width 0.3s;
+}
+#projects section:hover img {
+    margin-top: -80px;
+}
+
+#projects section ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+    #projects section ul li {
+        float: left;
+    }
+    #projects section ul li + li {
+        margin-left: 15px;
+    }
+#projects section:hover ul {
+    opacity: 1;
+}
+
+#projects section:hover img {
+    width: 18%;
+}
+    #projects #lhs-campaign:hover > img {
+        width: 46%;
+    }
+
+#more-info-wedge {
+    background-color: #fff;
+    padding: 25px;
+    color: #222;
+    text-align: left;
+}
+    #more-info-wedge h1 {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 28px;
+        text-transform: capitalize;
+    }
+    #more-info-wedge p {
+        font-size: 16px;
+        color: #999;
+        margin-top: 0;
+    }
+    #more-info-wedge ul {
+        padding: 0;
+        list-style-type: none;
+        color: #999;
+        margin-bottom: 0;
+    }
+        #more-info-wedge ul li + li {
+            margin-top: 15px;
+        }
+        #more-info-wedge ul li span:first-child {
+            font-weight: 600;
+            color: #222;
+        }
+        #more-info-wedge ul li .color {
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            border-radius: 25px;
+            vertical-align: text-bottom;
+            margin-left: 5px;
+        }
