@@ -87,3 +87,20 @@ ul {
         font-size: 20px;
     }
 }
+
+@media all and (max-width: 385px) {
+    h3, ul {
+        right: 0;
+    }
+    #people-list {
+        left: 0;
+    }
+        #people-list li {
+            display: block;
+            margin: 0;
+        }
+        #people-list li + li::before {
+            content: "";
+            margin: 0;
+        }
+}
