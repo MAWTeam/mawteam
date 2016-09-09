@@ -85,16 +85,19 @@ ul {
     }
 }
 
-@media all and (max-width: 385px) {
+@media all and (max-width: 575px) {
     #people-list {
         left: 0;
     }
-        #people-list li {
-            display: block;
-            margin: 0;
-        }
-        #people-list li + li::before {
-            content: "";
-            margin: 0;
-        }
+}
+
+@media all and (max-width: 385px) {
+    #people-list li {
+        display: block;
+        margin: 0;
+    }
+    #people-list li + li::before {
+        content: "";
+        margin: 0;
+    }
 }
