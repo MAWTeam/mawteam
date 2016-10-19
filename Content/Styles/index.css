@@ -54,14 +54,12 @@ ul {
             border-bottom-style: solid;
         }
 
-h3 {
+h3, #project-list {
     font-size: 16px;
     color: #fff;
 }
 
 #project-list { 
-    font-size: 16px;
-    color: #fff;
     border-bottom: 1px dotted currentColor;
 }
 
