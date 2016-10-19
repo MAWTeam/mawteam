@@ -65,9 +65,8 @@ h3, #project-list {
     border-bottom: 1px dotted currentColor;
 }
 
-project-list li a:hover { 
-    border-bottom-style: solid; 
-}
+#project-list li a:hover { 
+    border-bottom-style: solid; }
 
 #people-list {
     margin-top: 10px;
