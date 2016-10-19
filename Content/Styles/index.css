@@ -59,7 +59,7 @@ h3, #project-list {
     color: #fff;
 }
 
-#project-list { 
+#project-list li a { 
     border-bottom: 1px dotted currentColor;
 }
 
