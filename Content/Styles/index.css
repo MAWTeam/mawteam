@@ -45,7 +45,7 @@ ul {
         margin-top: 10px;
     }
     ul li a {
-        font-size: 20px;
+        font-size: 24px;
         color: #2f7ad3;
         text-decoration: none;
         border-bottom: 1px dotted currentColor;
@@ -57,9 +57,12 @@ ul {
 h3, #project-list {
     font-size: 16px;
     color: #fff;
-    border-bottom: 1px dotted currentColor;
-    
 }
+
+#project-list { 
+    border-bottom: 1px dotted currentColor;
+}
+
 #people-list {
     margin-top: 10px;
     position: relative;
