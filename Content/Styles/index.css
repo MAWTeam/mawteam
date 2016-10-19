@@ -1,4 +1,4 @@
-﻿html, body {
+html, body {
     height: 100%;
     width: 100%;
 
@@ -15,7 +15,7 @@
 }
 
 #logo {
-    margin-top: 100px;
+    margin-top: 50px;
     height: 150px;
 }
 
