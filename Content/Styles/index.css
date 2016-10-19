@@ -69,7 +69,7 @@ ul {
     }
 
 @media all and (max-width:750px) {
-    body {
+    body {s
         width: 100%;
         position: relative;
     }
