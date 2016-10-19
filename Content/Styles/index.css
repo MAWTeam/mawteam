@@ -57,16 +57,16 @@ ul {
 #people-list {
     margin-top: 10px;
     position: relative;
-    left: -20px; /* For centering */
 }
     #people-list li {
         display: inline-block;
         margin: 0;
     }
     #people-list li + li::before {
-        content: "+";
+        content: "";
         margin: 0 15px;
         cursor: default;
+        border-bottom: 1px dotted currentColor
     }
 
 @media all and (max-width:750px) {
