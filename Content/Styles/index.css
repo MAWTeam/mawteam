@@ -61,7 +61,7 @@ h3, #project-list {
 
 #project-list li a { 
     font-size: 16px;
-    color: #fff;
+    color: #b1b1b1;
     border-bottom: 1px dotted currentColor;
 }
 
