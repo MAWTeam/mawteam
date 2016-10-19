@@ -1,35 +1,73 @@
 ﻿html, body {
-    overflow: hidden;
-}
+    height: 100%;
+    width: 100%;
 
-/* We're using the body as basically a div#container to center all the things. */
-main {
-    height: auto;
-    width: 750px;
+    margin: 0;
+    padding: 0;
 
-    /* This is the "official" way to center things http://www.w3.org/Style/Examples/007/center.en.html#vertical */
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    background-color: #1f1f1f;
+    color: #fff;
 
-    transform: translate(-50%, -50%);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+
+    overflow-x: hidden;
 }
 
 #logo {
+    margin-top: 100px;
     height: 150px;
 }
 
 h2 {
-    margin-top: 50px;
+    margin-top: 30px;
 
     font-size: 25px;
     font-weight: 300;
 }
 
-.button {
-    display: inline-block;
-    margin: 50px 10px;
+h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    font-size: 23px;
+    font-weight: 300;
 }
+
+ul {
+    padding: 0;
+    margin-top: 10px;
+}
+    ul li {
+        list-style-type: none;
+    }
+    ul li + li {
+        margin-top: 10px;
+    }
+    ul li a {
+        font-size: 20px;
+        color: #2f7ad3;
+        text-decoration: none;
+        border-bottom: 1px dotted #2f7ad3;
+    }
+        main ul li a:hover {
+            border-bottom-style: solid;
+        }
+        
+#people-list {
+    margin-top: 10px;
+    position: relative;
+    left: -20px; /* For centering */
+}
+    #people-list li {
+        display: inline-block;
+        margin: 0;
+    }
+    #people-list li + li::before {
+        content: "+";
+        margin: 0 10px;
+        cursor: default;
+    }
 
 @media all and (max-width:750px) {
     body {
@@ -44,5 +82,22 @@ h2 {
 
     h2 {
         font-size: 20px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    #people-list {
+        left: 0;
+    }
+}
+
+@media all and (max-width: 385px) {
+    #people-list li {
+        display: block;
+        margin: 0;
+    }
+    #people-list li + li::before {
+        content: "";
+        margin: 0;
     }
 }
