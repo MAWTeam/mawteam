@@ -63,7 +63,10 @@ h3, #project-list {
     font-size: 16px;
     color: #b1b1b1;
     border-bottom: 1px dotted currentColor;
-    hover border-bottom-style: solid; 
+}
+
+project-list li a:hover { 
+    border-bottom-style: solid; 
 }
 
 #people-list {
